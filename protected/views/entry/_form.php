@@ -21,8 +21,13 @@
     <?php echo $form->labelEx($model, 'password'); ?>
 
     <div class="row collapse">
-        <div class="ten columns">
+        <div class="nine columns">
             <?php echo $form->passwordField($model, 'password', array('autocomplete' => 'off', 'required' => 'required')); ?>
+        </div>
+	<div class="one columns">
+            <span onclick="randomPassword()" class="postfix button secondary expand generate-password" title="generate password">
+                <i  class="foundicon-settings"></i>
+            </span>
         </div>
         <div class="one columns">
             <span class="postfix button secondary expand copy-to-clipboard" data-clipboard-text="<?php echo CHtml::value($model, 'password') ?>" title="copy password"><i class="foundicon-page"></i></span>
@@ -50,3 +55,20 @@
     <?php echo CHtml::submitButton('Save', array('class' => 'button radius'))?>
 
 <?php $this->endWidget(); ?>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+function randomPassword(length)
+{
+
+  var length = 16;
+  var charset = "!%&?*+-<>'@#23456789ABCDEFGHJKLMNOPRSTUVWXYZabcdefghijkmnopqrstuvwxyz";
+  var password = "";
+  for (var i = 0, n = charset.length; i < length; ++i) {
+      password += charset.charAt(Math.floor(Math.random() * n));
+  }
+
+  document.getElementById('Entry_password').value = password;
+  document.getElementById('Entry_password').setAttribute('type','text');
+}
+</script>
