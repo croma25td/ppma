@@ -1,8 +1,9 @@
 {
   "name": "ppma",
   "version": "0.5.1",
-  "homepage": "https://github.com/pklink/ppma",
+  "homepage": "https://github.com/croma25td/ppma",
   "authors": [
+	"croma25td <dev@croma25td.com>",
     "pklink <dev@klinks.info>",
     "crossgate9 <crossgate9@gmail.com>"
   ],

@@ -1,10 +1,14 @@
 {
-    "name": "pierre/ppma",
+    "name": "croma25td/ppma",
     "authors": [
         {
-            "name": "Pierre Klink",
+            "name": "Daniele Canciani",
+            "email": "dev@croma25td.com"
+        },
+		{
+			"name": "Pierre Klink",
             "email": "dev@klinks.info"
-        }
+		}
     ],
     "require": {
         "yiisoft/yii": "1.1.15"
